@@ -48,7 +48,7 @@ export default function About() {
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {['Data Science', 'Machine Learning', 'Artificial Intelligence', 'Deep Learning', 'Computer Vision', 'IoT Systems'].map((topic) => (
+                {['Data Science', 'Machine Learning', 'Artificial Intelligence', 'Deep Learning', 'Computer Vision', 'Software Engineering'].map((topic) => (
                   <div key={topic} className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-accent" />
                     <span style={{ color: 'var(--text)' }}>{topic}</span>
@@ -63,7 +63,7 @@ export default function About() {
                 </div>
                 <div className="glass rounded-xl p-4">
                   <div className="flex items-center gap-3 mb-2"><Icons.MapPin /><span className="font-semibold" style={{ color: 'var(--text)' }}>Location</span></div>
-                  <p style={{ color: 'var(--muted)' }}>New Delhi, India</p>
+                  <p style={{ color: 'var(--muted)' }}>Noida, Uttar Pradesh, India</p>
                 </div>
               </div>
             </div>
