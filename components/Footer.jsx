@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <span className="font-display text-xl font-bold gradient-text">Alex Chen</span>
+            <span className="font-display text-xl font-bold gradient-text">Tanishq Chauhan</span>
             <span style={{ color: 'var(--muted)' }}>|</span>
             <span className="text-sm" style={{ color: 'var(--muted)' }}>Data Science Engineer</span>
           </div>
@@ -15,7 +15,7 @@ export default function Footer() {
             <a href="#" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="LinkedIn"><Icons.LinkedIn /></a>
             <a href="mailto:alex.chen@email.com" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="Email"><Icons.Mail /></a>
           </div>
-          <p className="text-sm" style={{ color: 'var(--muted)' }}>© {new Date().getFullYear()} Alex Chen. All rights reserved.</p>
+          <p className="text-sm" style={{ color: 'var(--muted)' }}>© {new Date().getFullYear()} Tanishq Chauhan. All rights reserved.</p>
         </div>
       </div>
     </footer>
