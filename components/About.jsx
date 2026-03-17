@@ -59,7 +59,7 @@ export default function About() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="glass rounded-xl p-4">
                   <div className="flex items-center gap-3 mb-2"><Icons.GraduationCap /><span className="font-semibold" style={{ color: 'var(--text)' }}>Education</span></div>
-                  <p style={{ color: 'var(--muted)' }}>B.Tech in Computer Science</p>
+                  <p style={{ color: 'var(--muted)' }}>B.Tech in Computer Science and Engineering</p>
                 </div>
                 <div className="glass rounded-xl p-4">
                   <div className="flex items-center gap-3 mb-2"><Icons.MapPin /><span className="font-semibold" style={{ color: 'var(--text)' }}>Location</span></div>
