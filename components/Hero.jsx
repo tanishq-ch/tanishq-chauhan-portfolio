@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               <span style={{ color: 'var(--text)' }}>Hi, I'm </span>
-              <span className="gradient-text">Alex Chen</span>
+              <span className="gradient-text">Tanishq Chauhan</span>
             </h1>
             <div className="text-xl sm:text-2xl lg:text-3xl font-medium mb-6 h-12" style={{ color: 'var(--muted)' }}>
               <span>{displayText}</span>
