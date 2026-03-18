@@ -35,7 +35,14 @@ export default function Projects() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-display text-xl font-semibold mb-3" style={{ color: 'var(--text)' }}>{project.title}</h3>
-                  <p className="mb-4 text-sm" style={{ color: 'var(--muted)' }}>{project.description}</p>
+                  
+                  {/* Updated Section for Bullet Points */}
+                  <ul className="mb-4 space-y-1 text-sm list-disc list-inside" style={{ color: 'var(--muted)' }}>
+                    {project.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                  
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <span key={tech} className="px-3 py-1 rounded-full text-xs font-medium" style={{ background: 'var(--bg-lighter)', color: 'var(--text)' }}>
