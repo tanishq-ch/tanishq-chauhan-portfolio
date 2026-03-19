@@ -2,9 +2,9 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Research from '@/components/Research'
-import Experience from '@/components/Experience'
 import Achievements from '@/components/Achievements'
 import Certifications from '@/components/Certifications'
 import Contact from '@/components/Contact'
@@ -17,9 +17,9 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <Experience />
       <Projects />
       <Research />
-      <Experience />
       <Achievements />
       <Certifications />
       <Contact />
