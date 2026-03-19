@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Icons } from './Icons';
 import Particles from './Particles';
 
-const texts = ['Data Analyst', 'AI Enthusiast', 'Machine Learning Developer', 'Problem Solver'];
+const texts = ['Data Analyst', 'AI Enthusiast', 'Software Engineer', 'Machine Learning Developer', 'Problem Solver'];
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState('');
@@ -43,8 +43,9 @@ export default function Hero() {
       <Particles />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
+        {/* Changed flex-row to flex-col and centered items */}
+        <div className="flex flex-col items-center justify-center text-center">
+          
             <div className="inline-block px-4 py-2 rounded-full glass mb-6 text-sm font-medium" style={{ color: 'var(--muted)' }}>
               Welcome to my portfolio
             </div>
@@ -56,15 +57,15 @@ export default function Hero() {
               <span>{displayText}</span>
               <span className="typing-cursor" />
             </div>
-            <p className="text-lg mb-8 max-w-2xl mx-auto lg:mx-0" style={{ color: 'var(--muted)' }}>
+            <p className="text-lg mb-8 max-w-2xl" style={{ color: 'var(--muted)' }}>
               Passionate about transforming data into insights and building intelligent systems. Specializing in Machine Learning, Deep Learning, and AI solutions for real-world problems.
             </p>
 
-            {/* --- Updated Button Section --- */}
-            <div className="flex flex-col gap-6 items-center lg:items-start">
+            {/* Buttons Section */}
+            <div className="flex flex-col gap-6 items-center">
                 
                 {/* Top Row: View Projects & Resume */}
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-4 justify-center">
                     <a 
                         href="https://github.com/tanishq-ch" 
                         target="_blank" 
@@ -89,18 +90,17 @@ export default function Hero() {
                     </a>
                 </div>
 
-                {/* Bottom Row: Contact Icons with Colors */}
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                    {/* Email Button - Green */}
+                {/* Bottom Row: Contact Icons */}
+                <div className="flex flex-wrap gap-4 justify-center">
                     <a 
-                        href="mailto:tanishqchauhan767@gmail.com" 
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=your.email@gmail.com" 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
                     >
                         <Icons.Mail />
                         Email
                     </a>
-
-                    {/* LinkedIn Button - Blue */}
                     <a 
                         href="https://www.linkedin.com/in/tanishq--chauhan/" 
                         target="_blank"
@@ -110,8 +110,6 @@ export default function Hero() {
                         <Icons.LinkedIn />
                         LinkedIn
                     </a>
-
-                    {/* GitHub Button - Purple */}
                     <a 
                         href="https://github.com/tanishq-ch" 
                         target="_blank"
@@ -121,8 +119,6 @@ export default function Hero() {
                         <Icons.Github />
                         GitHub
                     </a>
-
-                    {/* Phone Button - Orange */}
                     <a 
                         href="tel:+91-9971505019" 
                         className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
@@ -132,26 +128,7 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-            {/* --- End Updated Section --- */}
-
-          </div>
           
-          <div className="flex-shrink-0">
-            <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full glass p-1 border-2 border-primary/30">
-                <div className="w-full h-full rounded-full overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
-                    alt="Tanishq Chauhan" 
-                    className="w-full h-full object-cover" 
-                  />
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 px-4 py-2 rounded-lg glass animate-pulse-glow">
-                <span className="text-accent font-semibold">Open to Opportunities</span>
-              </div>
-            </div>
-          </div>
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
