@@ -11,9 +11,9 @@ export default function Footer() {
             <span className="text-sm" style={{ color: 'var(--muted)' }}>Data Science Engineer</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="GitHub"><Icons.Github /></a>
-            <a href="#" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="LinkedIn"><Icons.LinkedIn /></a>
-            <a href="mailto:alex.chen@email.com" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="Email"><Icons.Mail /></a>
+            <a href="https://github.com/tanishq-ch" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="GitHub"><Icons.Github /></a>
+            <a href="https://www.linkedin.com/in/tanishq--chauhan/" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="LinkedIn"><Icons.LinkedIn /></a>
+            <a href="mailto:tanishqchauhan767@gmail.com" className="p-2 rounded-lg glass hover:scale-105 transition-transform" aria-label="Email"><Icons.Mail /></a>
           </div>
           <p className="text-sm" style={{ color: 'var(--muted)' }}>© {new Date().getFullYear()} Tanishq Chauhan. All rights reserved.</p>
         </div>
