@@ -1,9 +1,9 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Icons } from './Icons';
 import Particles from './Particles';
 
-const texts = ['Data Science Engineer', 'AI Enthusiast', 'Machine Learning Developer', 'Problem Solver'];
+const texts = ['Data Analyst', 'AI Enthusiast', 'Machine Learning Developer', 'Problem Solver'];
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState('');
@@ -59,21 +59,92 @@ export default function Hero() {
             <p className="text-lg mb-8 max-w-2xl mx-auto lg:mx-0" style={{ color: 'var(--muted)' }}>
               Passionate about transforming data into insights and building intelligent systems. Specializing in Machine Learning, Deep Learning, and AI solutions for real-world problems.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <a href="https://github.com/tanishq-ch" className="btn-primary px-8 py-3 rounded-lg font-semibold text-white">
-                <span className="flex items-center gap-2">View Projects <Icons.ExternalLink /></span>
-              </a>
-              <a href="/TanishqChauhan_Resume.pdf" download="TanishqChauhan_Resume.pdf" className="px-8 py-3 rounded-lg font-semibold glass border border-primary/50 hover:bg-primary/10 transition-colors" style={{ color: 'var(--text)' }}>
-                <span className="flex items-center gap-2"><Icons.Download /> Resume</span>
-              </a>
+
+            {/* --- Updated Button Section --- */}
+            <div className="flex flex-col gap-6 items-center lg:items-start">
+                
+                {/* Top Row: View Projects & Resume */}
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a 
+                        href="https://github.com/tanishq-ch" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn-primary px-8 py-3 rounded-lg font-semibold text-white"
+                    >
+                        <span className="flex items-center gap-2">
+                        View Projects
+                        <Icons.ExternalLink />
+                        </span>
+                    </a>
+                    <a 
+                        href="/TanishqChauhan_Resume.pdf" 
+                        download="TanishqChauhan_Resume.pdf"
+                        className="px-8 py-3 rounded-lg font-semibold glass border border-primary/50 hover:bg-primary/10 transition-colors" 
+                        style={{ color: 'var(--text)' }}
+                    >
+                        <span className="flex items-center gap-2">
+                        <Icons.Download /> 
+                        Download Resume
+                        </span>
+                    </a>
+                </div>
+
+                {/* Bottom Row: Contact Icons with Colors */}
+                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    {/* Email Button - Green */}
+                    <a 
+                        href="mailto:tanishqchauhan767@gmail.com" 
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
+                    >
+                        <Icons.Mail />
+                        Email
+                    </a>
+
+                    {/* LinkedIn Button - Blue */}
+                    <a 
+                        href="https://www.linkedin.com/in/tanishq--chauhan/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                    >
+                        <Icons.LinkedIn />
+                        LinkedIn
+                    </a>
+
+                    {/* GitHub Button - Purple */}
+                    <a 
+                        href="https://github.com/tanishq-ch" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-300"
+                    >
+                        <Icons.Github />
+                        GitHub
+                    </a>
+
+                    {/* Phone Button - Orange */}
+                    <a 
+                        href="tel:+91-9971505019" 
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
+                    >
+                        <Icons.Phone />
+                        Call
+                    </a>
+                </div>
             </div>
+            {/* --- End Updated Section --- */}
+
           </div>
           
           <div className="flex-shrink-0">
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full glass p-1 border-2 border-primary/30">
                 <div className="w-full h-full rounded-full overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Tanishq Chauhan" className="w-full h-full object-cover" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                    alt="Tanishq Chauhan" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 px-4 py-2 rounded-lg glass animate-pulse-glow">
