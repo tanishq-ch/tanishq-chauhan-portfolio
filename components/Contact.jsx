@@ -38,21 +38,21 @@ export default function Contact() {
             <div className={`slide-in-left ${isVisible ? 'visible' : ''}`}>
               <h3 className="font-display text-2xl font-semibold mb-6" style={{ color: 'var(--text)' }}>Contact Information</h3>
               <div className="space-y-6">
-                <a href="mailto:alex.chen@email.com" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
+                <a href="mailto:tanishqchauhan767@gmail.com" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
                   <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary"><Icons.Mail /></div>
-                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>Email</p><p className="font-medium" style={{ color: 'var(--text)' }}>alex.chen@email.com</p></div>
+                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>Email</p><p className="font-medium" style={{ color: 'var(--text)' }}>tanishqchauhan767@gmail.com</p></div>
                 </a>
-                <a href="#" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
+                <a href="https://www.linkedin.com/in/tanishq--chauhan/" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
                   <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center text-secondary"><Icons.LinkedIn /></div>
-                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>LinkedIn</p><p className="font-medium" style={{ color: 'var(--text)' }}>linkedin.com/in/alexchen</p></div>
+                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>LinkedIn</p><p className="font-medium" style={{ color: 'var(--text)' }}>https://www.linkedin.com/in/tanishq--chauhan/</p></div>
                 </a>
-                <a href="#" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
+                <a href="https://github.com/tanishq-ch" className="flex items-center gap-4 glass rounded-xl p-4 card-hover">
                   <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center text-accent"><Icons.Github /></div>
-                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>GitHub</p><p className="font-medium" style={{ color: 'var(--text)' }}>github.com/alexchen</p></div>
+                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>GitHub</p><p className="font-medium" style={{ color: 'var(--text)' }}>github.com/tanishq-ch</p></div>
                 </a>
                 <div className="flex items-center gap-4 glass rounded-xl p-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary"><Icons.MapPin /></div>
-                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>Location</p><p className="font-medium" style={{ color: 'var(--text)' }}>New Delhi, India</p></div>
+                  <div><p className="text-sm" style={{ color: 'var(--muted)' }}>Location</p><p className="font-medium" style={{ color: 'var(--text)' }}>Noida, India</p></div>
                 </div>
               </div>
             </div>
